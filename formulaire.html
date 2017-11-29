@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/webStorage.js"></script>
+        <script type="text/javascript" src="js/indexedDatabase.js"></script>
+        <script type="text/javascript" src="js/fileApi.js"></script>
+
+        <title>Gestionnaire de carnet d'adresses</title>
+
+    </head>
+    <body>
+
+        <h1>Créer un nouveau contact </h1>
+
+        <br>
+
+        <form>
+
+            <div id="champs">
+                <span class="txt">Nom : </span><input type="text" id="nom"/>
+                <br>
+                <span class="txt">Prenom : </span><input type="text" id="prenom"/>
+                <br>
+                <span class="txt">Adresse mail : </span><input type="text" id="mail"/>
+                <br>
+                <span class="txt">Civilité : </span><label for="mr">Mr</label> <input type="radio" id="mr" name="civilite" value="Mr"/><label for="mme">Mme</label> <input type="radio" id="mme" name="civilite" value="Mme"/>
+                <br>
+                <span class="txt">Rue et numéro de voie : </span><input type="text" id="rueVoie"/>
+                <br>
+                <span class="txt">Code postal : </span><input type="text" id="codePostal"/>
+                <br>
+                <span class="txt">Ville : </span><input type="text"  id="ville"/>
+                <br>
+                <span class="txt">Pays : </span><input type="text" id="pays"/>
+                <br>
+                <span class="txt">Numéro de téléphone : </span><input type="text" id="numTel"/>
+                <br>
+                <input type="button" value="Enregistrer avec Web Storage" id="persistWebStorage"/>
+                <input type="button" value="Enregistrer avec Indexed Database" id="persistIndexDB">
+                <input type="button" value="Enregistrer avec File API" id="persistFileAPI">
+                <br>
+                <input type="reset" value="Effacer champs"/>
+
+                <!--file pour file API-->
+                <br>
+                <input id="file" type="file" multiple/>
+                <br>
+            </div>
+
+        </form>
+
+        <a href="affichage.html">Consulter le carnet</a>
+
+    </body>
+</html>

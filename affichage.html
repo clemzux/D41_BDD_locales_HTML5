@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/webStorage.js"></script>
+        <script type="text/javascript" src="js/indexedDatabase.js"></script>
+
+        <title>Affichage des données</title>
+    </head>
+    <body>
+
+        <form>
+
+            <span class="text">Clé : <input type="text" id="key"><input type="button" id="affichageWebStorage" value="Chercher WebStorage"></span>
+            <input type="button" id="affichageIndexedDB" value="Chercher IndexedDB">
+            <br>
+
+            <p id="nom">Nom : </p>
+            <br>
+            <p id="prenom">Prenom : </p>
+            <br>
+            <p id="civilite">Civilité : </p>
+            <br>
+            <p id="rueVoie">Rue et numéro voie : </p>
+            <br>
+            <p id="codePostal">Code postal : </p>
+            <br>
+            <p id="ville">Ville : </p>
+            <br>
+            <p id="pays">Pays : </p>
+            <br>
+            <p id="numTel">Num tél : </p>
+            <br>
+
+        </form>
+
+        <a href="formulaire.html">Retour</a><input type="button" value="Effacer l'entrée web storage" id="delEntryWS"><input type="button" value="Effacer la base web storage" id="delBDDWS">
+        <br>
+        <input type="button" value="Effacer l'entrée IndexedDB" id="delEntryIDB"><input type="button" value="Effacer la BDD IndexedDB" id="delBDDIDB">
+
+    </body>
+</html>
