@@ -15,7 +15,8 @@
 
             <h1>Consulter un contact</h1>
 
-            <span class="text">Clé : <input type="text" id="key"><input type="button" id="affichageWebStorage" value="Chercher WebStorage"></span>
+            <span class="text">Clé / Id : <input type="text" id="key"><input type="button" id="affichageWebStorage" value="Chercher WebStorage"></span>
+            <input type="button" id="affichageWebSQL" value="Chercher WebSQL">
             <input type="button" id="affichageIndexedDB" value="Chercher IndexedDB">
             <br>
 
@@ -37,10 +38,11 @@
             <br>
             <br>
             <div id="boutons">
-                <input class="bouton" type="button" value="Effacer l'entrée web storage" id="delEntryWS"><input class="bouton" type="button" value="Effacer l'entrée IndexedDB" id="delEntryIDB">
+                <input class="bouton" type="button" value="Effacer l'entrée web storage" id="delEntryWS"><input class="bouton" type="button" value="Effacer l'entrée WebSql" id="delEntrySQL"><input class="bouton" type="button" value="Effacer l'entrée IndexedDB" id="delEntryIDB">
                 <br>
-                <input class="bouton" type="button" value="Effacer la base web storage" id="delBDDWS"><input class="bouton" type="button" value="Effacer la BDD IndexedDB" id="delBDDIDB">
+                <input class="bouton" type="button" value="Effacer la base web storage" id="delBDDWS"><input class="bouton" type="button" value="Effacer la BDD WebSql" id="delBDDSQL"><input class="bouton" type="button" value="Effacer la BDD IndexedDB" id="delBDDIDB">
                 <br>
+
                 <a href="formulaire.html">Retour</a>
             </div>
         </div>
